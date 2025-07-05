@@ -44,10 +44,10 @@ const InfoSection = ({
                 <BtnWrap>
                   <Button
                     to="home"
-                    smooth={true}
+                    smooth
                     duration={500}
-                    spy={true}
-                    exact="true"
+                    spy
+                    exact
                     offset={-80}
                     primary={primary ? 1 : 0}
                     dark={dark ? 1 : 0}

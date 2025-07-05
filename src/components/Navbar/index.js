@@ -18,17 +18,15 @@ const Navbar = ({ toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
-    if (window.scrollY >= 80) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
+    setScrollNav(window.scrollY >= 80);
   };
 
   const toggleHome = () => scroll.scrollToTop();
-
   useEffect(() => {
     window.addEventListener("scroll", changeNav);
+    return () => {
+      window.removeEventListener("scroll", changeNav);
+    };
   }, []);
 
   return (
@@ -45,10 +43,10 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 to="about"
-                smooth={true}
+                smooth
                 duration={500}
-                spy={true}
-                exact="true"
+                spy
+                exact
                 offset={-80}
               >
                 About
@@ -57,10 +55,10 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 to="discover"
-                smooth={true}
+                smooth
                 duration={500}
-                spy={true}
-                exact="true"
+                spy
+                exact
                 offset={-80}
               >
                 Discover
@@ -69,10 +67,10 @@ const Navbar = ({ toggle }) => {
             <NavItem>
               <NavLinks
                 to="services"
-                smooth={true}
+                smooth
                 duration={500}
-                spy={true}
-                exact="true"
+                spy
+                exact
                 offset={-80}
               >
                 Services

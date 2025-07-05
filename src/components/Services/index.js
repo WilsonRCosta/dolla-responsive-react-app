@@ -18,24 +18,24 @@ const Services = () => {
       <ServicesH1>Our Services</ServicesH1>
       <ServicesWrapper>
         <ServicesCard>
-          <ServicesIcon src={Icon1} />
+          <ServicesIcon src={Icon1} alt="Reduce Expenses Icon"/>
           <ServicesH2>Reduce Expenses</ServicesH2>
           <ServicesP>
             We help reduce your fees and increase your overall renevue.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon2} />
+          <ServicesIcon src={Icon2} alt="Virtual Offices Icon" />
           <ServicesH2>Virtual Offices</ServicesH2>
           <ServicesP>
-            We help reduce your fees and increase your overall renevue.
+            We help reduce your fees and increase your overall revenue.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
-          <ServicesIcon src={Icon3} />
-          <ServicesH2>Premium benefits</ServicesH2>
+          <ServicesIcon src={Icon3} alt="Premium Benefits Icon"/>
+          <ServicesH2>Premium Benefits</ServicesH2>
           <ServicesP>
-            We help reduce your fees and increase your overall renevue.
+            We help reduce your fees and increase your overall revenue.
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>

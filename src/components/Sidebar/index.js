@@ -16,7 +16,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
-      <SidebarWrapper>
+      <SidebarWrapper onClick={e => e.stopPropagation()}>
         <SidebarMenu>
           <SidebarLink to="about" onClick={toggle}>
             About

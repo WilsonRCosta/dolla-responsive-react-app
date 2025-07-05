@@ -70,41 +70,46 @@ const Footer = () => {
               dolla
             </SocialLogo>
             <WebsiteRights>
-              dolla © {new Date().getFullYear()} All rigths reserved.
+              dolla © {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink
                 href="//www.facebook.com"
                 target="_blank"
-                arial-label="Facebook"
+                aria-label="Facebook"
+                rel="noopener noreferrer"
               >
                 <FaFacebook />
               </SocialIconLink>
               <SocialIconLink
                 href="//www.instagram.com"
                 target="_blank"
-                arial-label="Intagram"
+                aria-label="Intagram"
+                rel="noopener noreferrer"
               >
                 <FaInstagram />
               </SocialIconLink>
               <SocialIconLink
                 href="//www.youtube.com"
                 target="_blank"
-                arial-label="Youtube"
+                aria-label="Youtube"
+                rel="noopener noreferrer"
               >
                 <FaYoutube />
               </SocialIconLink>
               <SocialIconLink
                 href="//www.twitter.com"
                 target="_blank"
-                arial-label="Twitter"
+                aria-label="Twitter"
+                rel="noopener noreferrer"
               >
                 <FaTwitter />
               </SocialIconLink>
               <SocialIconLink
                 href="//www.linkedin.com"
                 target="_blank"
-                arial-label="Linkedin"
+                aria-label="Linkedin"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin />
               </SocialIconLink>
